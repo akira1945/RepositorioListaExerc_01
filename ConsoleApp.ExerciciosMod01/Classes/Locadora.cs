@@ -17,17 +17,17 @@ namespace ConsoleApp.ExerciciosMod01.Classes
 
         public void AddItemLocadora(ItemLocadora locavel)
         {
-            if(locavel.codigo > 0)
+            if (locavel.codigo > 0)
             {
                 locaveis.Add(locavel);
                 Console.WriteLine($"Item adicionado a lista de locação com sucesso: {locavel.codigo} / {locavel.titulo}.");
-            }	
+            }
         }
 
         public void RemoveItemLocadora(int codigoRemover)
         {
             ItemLocadora locavel = locaveis.Find(l => l.codigo == codigoRemover);
-            if(locavel != null)
+            if (locavel != null)
             {
                 locaveis.Remove(locavel);
                 Console.WriteLine($"Item removida da lista de locação com sucesso: {codigoRemover} / {locavel.titulo}");
@@ -39,7 +39,7 @@ namespace ConsoleApp.ExerciciosMod01.Classes
         }
 
         public void ListarItemLocadora()
-        {   
+        {
             Console.WriteLine("Listando itens:");
             foreach (var listaItens in locaveis)
             {

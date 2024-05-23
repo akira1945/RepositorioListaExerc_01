@@ -8,7 +8,7 @@ namespace ConsoleApp.ExerciciosMod01.Classes
 {
     public class Serie : ItemLocadora
     {
-         public int Temporada { get; set; }
+        public int Temporada { get; set; }
 
         public int Epsodios { get; set; }
 
@@ -16,10 +16,10 @@ namespace ConsoleApp.ExerciciosMod01.Classes
         public Serie(int codigo, string titulo, int ano, int temporada, int epsodios) : base(codigo, titulo, ano)
         {
             this.Temporada = temporada;
-            this.Epsodios  = epsodios;
+            this.Epsodios = epsodios;
         }
 
-    
+
         public override void ExibirDetalhes()
         {
             Console.WriteLine($"Serie: {titulo} \n Codigo para locação: {codigo} \n Ano lançamento:{ano} \n Quantidade de Temporadas: {Temporada} \n Total de epsodios: {Epsodios}");

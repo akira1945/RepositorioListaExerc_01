@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.ExerciciosMod01.Classes
 {
-    public class Documentario : ItemLocadora 
+    public class Documentario : ItemLocadora
     {
         public string Assunto { get; set; }
 
-        public Documentario(int codigo, string titulo, int ano, string assunto ) : base(codigo, titulo, ano)
+        public Documentario(int codigo, string titulo, int ano, string assunto) : base(codigo, titulo, ano)
         {
             this.Assunto = assunto;
         }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.ExerciciosMod01.Classes
 {
-    public class Usuario
+    public abstract class Usuario
     {
         
         public string Nome { get; set; }

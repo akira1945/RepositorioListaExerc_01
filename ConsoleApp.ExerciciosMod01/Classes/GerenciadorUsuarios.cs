@@ -17,7 +17,7 @@ namespace ConsoleApp.ExerciciosMod01.Classes
         public void AddUsuario(Usuario usuario)
         {
             Usuario usu = usuarios.Find(u => u.Id == usuario.Id);
-            if(usu != null)
+            if (usu != null)
             {
                 usuarios.Add(usuario);
                 Console.WriteLine($"Cliente adicionado com sucesso: {usuario.Id} / {usuario.Nome}");
@@ -27,7 +27,7 @@ namespace ConsoleApp.ExerciciosMod01.Classes
         public void RemoverUsuario(int idUsuario)
         {
             Usuario usu = usuarios.Find(u => u.Id == idUsuario);
-            if(usu != null)
+            if (usu != null)
             {
                 usuarios.Remove(usu);
                 Console.WriteLine($"Cliente adicionado com sucesso: {usu.Id} / {usu.Nome}");
@@ -44,9 +44,9 @@ namespace ConsoleApp.ExerciciosMod01.Classes
             foreach (var lista in usuarios)
             {
                 lista.ExibirDetalhesUsuario();
-                Console.WriteLine();                
+                Console.WriteLine();
             }
         }
-        
+
     }
 }

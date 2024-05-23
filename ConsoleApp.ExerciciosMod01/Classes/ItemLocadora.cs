@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.ExerciciosMod01.Classes
 {
-    public class ItemLocadora
+    public abstract class ItemLocadora
     {
         private int Codigo;
 
@@ -20,9 +20,12 @@ namespace ConsoleApp.ExerciciosMod01.Classes
 
         public ItemLocadora( int codigo, string titulo, int ano )
         {
-            this.Ano = ano;
             this.Codigo = codigo;
             this.Titulo = titulo;            
+            this.Ano = ano;
         }
+
+        public abstract void ExibirDetalhes();
+        
     }
 }
