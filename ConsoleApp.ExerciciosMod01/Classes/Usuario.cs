@@ -7,10 +7,10 @@ namespace ConsoleApp.ExerciciosMod01.Classes
 {
     public abstract class Usuario
     {
-        
+
         public string Nome { get; set; }
 
-        public int  Id { get; set; }
+        public int Id { get; set; }
 
         public Usuario(string nome, int id)
         {
@@ -18,7 +18,7 @@ namespace ConsoleApp.ExerciciosMod01.Classes
             this.Id = id;
         }
 
-//metodo abstrato
+        //metodo abstrato
         public abstract void ExibirDetalhesUsuario();
     }
 }
